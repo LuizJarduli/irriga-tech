@@ -6,21 +6,21 @@ import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 const menuitems = [
   {
-    title: "Features",
+    title: "Recursos",
     path: "#",
     children: [
-      { title: "Action", path: "/" },
-      { title: "Another action", path: "#" },
-      { title: "Dropdown Submenu", path: "#" },
-      { title: "404 Page", path: "/404" },
+      { title: "Controle Inteligente", path: "/#features" },
+      { title: "Monitoramento", path: "/#features" },
+      { title: "Economia de Água", path: "/#features" },
+      { title: "Análise de Dados", path: "/#features" },
     ],
   },
   {
-    title: "Pricing",
+    title: "Preços",
     path: "/pricing",
   },
   {
-    title: "About",
+    title: "Sobre",
     path: "/about",
   },
   {
@@ -28,13 +28,13 @@ const menuitems = [
     path: "/blog",
   },
   {
-    title: "Contact",
+    title: "Contato",
     path: "/contact",
   },
   {
-    title: "Pro Version",
+    title: "Solicitar Demo",
     badge: true,
-    path: "https://astroship-pro.web3templates.com/",
+    path: "/contact",
   },
 ];
 ---
@@ -44,8 +44,8 @@ const menuitems = [
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
         <a href="/" class="text-lg"
-          ><span class="font-bold text-slate-800">Astro</span><span
-            class="text-slate-500">ship</span
+          ><span class="font-bold text-slate-800">Irriga</span><span
+            class="text-slate-500">Tech</span
           >
         </a>
         <div class="block lg:hidden">
@@ -84,15 +84,15 @@ const menuitems = [
           }
         </ul>
         <div class="lg:hidden flex items-center mt-3 gap-4">
-          <Link href="#" style="muted" block size="md">Log in</Link>
-          <Link href="#" size="md" block>Sign up</Link>
+          <Link href="/contato" style="muted" block size="md">Contato</Link>
+          <Link href="/pricing" size="md" block>Preços</Link>
         </div>
       </MenuItems>
     </Astronav>
     <div>
       <div class="hidden lg:flex items-center gap-4">
-        <a href="#">Log in</a>
-        <Link href="#" size="md">Sign up</Link>
+        <a href="/contato">Contato</a>
+        <Link href="/pricing" size="md">Preços</Link>
       </div>
     </div>
   </header>

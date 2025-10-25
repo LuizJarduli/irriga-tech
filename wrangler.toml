@@ -4,9 +4,9 @@ compatibility_date = "2024-01-01"
 [env.production]
 SMTP_HOST = "smtp.gmail.com"
 SMTP_PORT = "587"
-SMTP_USER = "your-email@gmail.com"
-SMTP_PASS = "your-app-password"
-CONTACT_EMAIL = "contato@irrigatech.com"
+SMTP_USER = "luizjarduli@gmail.com"
+SMTP_PASS = "ipdd jyya fjkl shxx"
+CONTACT_EMAIL = "luizjarduli@gmail.com"
 
 [[pages.functions]]
 name = "send-email"

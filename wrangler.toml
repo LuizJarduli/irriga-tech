@@ -1,0 +1,13 @@
+name = "irrigatech"
+compatibility_date = "2024-01-01"
+
+[env.production]
+SMTP_HOST = "smtp.gmail.com"
+SMTP_PORT = "587"
+SMTP_USER = "your-email@gmail.com"
+SMTP_PASS = "your-app-password"
+CONTACT_EMAIL = "contato@irrigatech.com"
+
+[[pages.functions]]
+name = "send-email"
+path = "/api/send-email"

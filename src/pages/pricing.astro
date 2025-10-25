@@ -6,11 +6,11 @@ import PricingCard from "@/components/pricing.astro";
 
 const pricing = [
   {
-    name: "Básico",
+    name: "Horta Pessoal",
     price: "Grátis",
     popular: false,
     features: [
-      "Até 1 hectare",
+      "Até 50m² de horta",
       "Monitoramento básico",
       "Relatórios simples",
       "Suporte por email",
@@ -19,20 +19,20 @@ const pricing = [
     ],
     button: {
       text: "Começar",
-      link: "/contato",
+      link: "/contact",
     },
   },
   {
-    name: "Profissional",
+    name: "Pequeno Negócio Verde",
     price: {
-      monthly: "R$ 199",
-      annual: "R$ 179",
+      monthly: "R$ 99",
+      annual: "R$ 89",
       discount: "10%",
-      original: "R$ 219",
+      original: "R$ 109",
     },
     popular: true,
     features: [
-      "Até 10 hectares",
+      "Até 500m² de área",
       "Controle inteligente",
       "Relatórios avançados",
       "Suporte prioritário",
@@ -41,11 +41,11 @@ const pricing = [
     ],
     button: {
       text: "Começar",
-      link: "/contato",
+      link: "/contact",
     },
   },
   {
-    name: "Empresarial",
+    name: "Negócio Verde Escalável",
     price: "Personalizado",
     popular: false,
     features: [
@@ -58,7 +58,7 @@ const pricing = [
     ],
     button: {
       text: "Fale conosco",
-      link: "/contato",
+      link: "/contact",
     },
   },
 ];
@@ -69,7 +69,7 @@ const pricing = [
     <Sectionhead>
       <Fragment slot="title">Preços</Fragment>
       <Fragment slot="desc">
-        Preços simples e previsíveis. Sem surpresas.
+        Preços simples e previsíveis para sua horta inteligente.
       </Fragment>
     </Sectionhead>
 

@@ -3,6 +3,8 @@ import Container from "@/components/container.astro";
 import Link from "@/components/ui/link.astro";
 import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+import svgLogo from "@/assets/logo.svg";
+import { Image } from "astro:assets";
 
 const menuitems = [
   {
@@ -19,10 +21,10 @@ const menuitems = [
     title: "Preços",
     path: "/pricing",
   },
-  {
-    title: "Sobre",
-    path: "/about",
-  },
+  // {
+  //   title: "Sobre",
+  //   path: "/about",
+  // },
   {
     title: "Contato",
     path: "/contact",
@@ -39,10 +41,13 @@ const menuitems = [
   <header class="flex flex-col lg:flex-row justify-between items-center my-5">
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
-        <a href="/" class="text-lg"
-          ><span class="font-bold text-slate-800">Irriga</span><span
-            class="text-slate-500">Tech</span
-          >
+        <a href="/" class="text-lg flex gap-2">
+          <div>
+            <span class="font-bold text-slate-800">Irriga</span><span
+              class="text-slate-500">Tech</span
+            >
+          </div>
+          <Image src={svgLogo} alt="Logo irrigaTech" />
         </a>
         <div class="block lg:hidden">
           <MenuIcon class="w-4 h-4 text-gray-800" />

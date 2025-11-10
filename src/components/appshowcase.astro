@@ -1,0 +1,81 @@
+---
+import { Image } from "astro:assets";
+import mainImage from "@/assets/main_app_page.png";
+import mainImage2 from "@/assets/main_app_page_2.png";
+import mainImage3 from "@/assets/main_app_page_3.png";
+import mainImage4 from "@/assets/main_app_page_4.png";
+import mainImage5 from "@/assets/main_app_page_5.png";
+import mainImage6 from "@/assets/main_app_page_6.png";
+import mainDesktopPage from "@/assets/main_desktop_page.png";
+import svgLogo from "@/assets/logo.svg";
+---
+
+<div class="w-full px-5 flex flex-col items-center gap-y-6 mt-[48px]">
+  <div class="flex items-center gap-2.5">
+    <h2>
+      <span class="font-bold text-4xl text-slate-800">Irriga</span><span
+        class="text-green-800 text-5xl">Tech</span
+      >
+    </h2>
+    <Image src={svgLogo} alt="Logo irrigaTech" width={40} />
+  </div>
+  <div class="w-full flex items-start gap-3.5 pt-6">
+    <div class="flex-2 relative hidden md:block">
+      <div
+        class="w-full aspect-video shadow mt-16"
+        style="clip-path: rect(2px 99% 99% 2px round 8px);">
+        <Image
+          src={mainDesktopPage}
+          alt="App desktop showcase irrigaTech"
+          fit="cover"
+        />
+      </div>
+      <div class="w-full flex justify-end gap-3.5">
+        <div
+          class="shadow mt-[150px] max-w-[318px] h-[360px]"
+          style="clip-path: rect(2px 99% 99% 2px round 30px);">
+          <Image src={mainImage2} alt="App showcase 2 irrigaTech" fit="cover" />
+        </div>
+        <div
+          class="shadow-2xl mt-5 max-w-[318px] h-[360px]"
+          style="clip-path: rect(2px 99% 99% 2px round 30px);">
+          <Image src={mainImage3} alt="App showcase 3 irrigaTech" fit="cover" />
+        </div>
+      </div>
+    </div>
+    <div
+      class="border-8 rounded-[39px] border-green-950 bg-green-950 shadow-2xl">
+      <div
+        class="max-w-[318px] lg:h-[718px]"
+        style="clip-path: rect(2px 99% 99% 2px round 30px);">
+        <Image
+          src={mainImage}
+          alt="App showcase 1 irrigaTech"
+          width={320}
+          fit="cover"
+        />
+      </div>
+    </div>
+    <div class="flex-2 gap-5 hidden md:flex">
+      <div class="flex flex-col gap-y-8 mt-14">
+        <div
+          class="shadow max-w-[318px] h-[360px]"
+          style="clip-path: rect(2px 99% 99% 2px round 30px);">
+          <Image src={mainImage4} alt="App showcase 4 irrigaTech" fit="cover" />
+        </div>
+        <div
+          class="shadow-2xl max-w-[318px] h-[360px]"
+          style="clip-path: rect(2px 99% 99% 2px round 30px);">
+          <Image src={mainImage5} alt="App showcase 5 irrigaTech" fit="cover" />
+        </div>
+      </div>
+      <div class="flex-1">
+        <div
+          class="shadow-2xl mt-5 max-w-[318px] h-[360px]"
+          style="clip-path: rect(2px 99% 99% 2px round 30px);">
+          <Image src={mainImage6} alt="App showcase 6 irrigaTech" fit="cover" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
